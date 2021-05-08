@@ -69,6 +69,7 @@
         "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
         "prod": "npm run production",
         "postinstall": "npm run prod",
+        "heroku-postbuild": "npm run prod",
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "dependencies": {
@@ -126,8 +127,8 @@
         "vue-template-compiler": "^2.6.11"
     },
     "engines": {
-        "node": ">=14",
-        "npm": ">=7"
+        "node": "=14.16.1",
+        "npm": "=7.9.0"
     },
     "browserslist": [
         "last 1 major version",
